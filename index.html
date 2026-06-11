@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of a Software Engineer and UI/UX Designer">
+    <meta property="og:title" content="Portfolio | Upeka Jayaweera">
+    <meta property="og:description" content="Showcase of projects, skills, and experience">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Portfolio | Sandamini Ranasignhe</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <style>
+/* Dark theme portfolio CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #0f172a;
+  --second-bg-color: #1e293b;
+  --text-color: #f1f5f9;
+  --muted-text: #cbd5e1;
+  --accent-color: #a855f7;
+  --accent-light: #d8b4fe;
+  --max-width: 1200px;
+}
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem 5%;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(168, 85, 247, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f1f5f9;
+}
+
+.logo span {
+  color: #a855f7;
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #f1f5f9;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #a855f7;
+}
+
+.gradient-btn {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gradient-btn:hover {
+  transform: translateY(-2px);
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 6rem 5% 4rem;
+  max-width: var(--max-width);
+  margin: 60px auto 0;
+}
+
+.home-content h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.home-content h2 span {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.titles {
+  font-size: 1.3rem;
+  color: #a855f7;
+  margin: 2rem 0;
+  font-weight: 600;
+}
+
+.titles-container {
+  margin: 2rem 0;
+  min-height: 60px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.icon-link {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid #a855f7;
+  border-radius: 50%;
+  color: #a855f7;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+
+.icon-link:hover {
+  background: #a855f7;
+  color: white;
+  transform: translateY(-5px);
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  color: #f1f5f9;
+  border: 2px solid #a855f7;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #a855f7;
+  color: white;
+}
+
+.code-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-behance {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  border: none;
+  color: white;
+}
+
+.home-img {
+  flex: 1;
+}
+
+.home-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  border: 2px solid #a855f7;
+}
+
+section {
+  padding: 4rem 5%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.about {
+  background: #1e293b;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.about-content h2 span {
+  color: #a855f7;
+}
+
+.about-content p {
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.skills-group h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #a855f7;
+}
+
+.skills-box ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.skills-box li {
+  padding: 0.75rem 1rem;
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid #a855f7;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.skills-box li:hover {
+  background: #a855f7;
+  color: white;
+  transform: translateY(-5px);
+}
+
+.education {
+  background: #1e293b;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading span {
+  color: #a855f7;
+}
+
+.timeline-items {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline-items::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: #a855f7;
+}
+
+.timeline-item {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.timeline-item:nth-child(odd) {
+  flex-direction: row-reverse;
+  margin-left: 50%;
+}
+
+.timeline-item:nth-child(even) {
+  margin-right: 50%;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background: #a855f7;
+  border: 4px solid #0f172a;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.timeline-date {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #a855f7;
+  width: 100px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  background: rgba(168, 85, 247, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 3px solid #a855f7;
+  width: 100%;
+}
+
+.timeline-content h3 {
+  margin-bottom: 0.5rem;
+  color: #f1f5f9;
+}
+
+.timeline-content p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.projects {
+  padding: 4rem 5%;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.projects-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: rgba(168, 85, 247, 0.05);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  border-color: #a855f7;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 1rem;
+  color: #f1f5f9;
+}
+
+.project-card p {
+  padding: 0 1rem;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.tech-stack {
+  padding: 1rem;
+  color: #a855f7;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.project-buttons .btn {
+  flex: 1;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+}
+
+.readmore-btn {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  border: none;
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid #a855f7;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a855f7;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  color: #a855f7;
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.contact {
+  background: #1e293b;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-box input,
+.input-box textarea {
+  padding: 0.75rem;
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid #a855f7;
+  border-radius: 8px;
+  color: #f1f5f9;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s;
+}
+
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+  color: #cbd5e1;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+  outline: none;
+  background: rgba(168, 85, 247, 0.2);
+  border-color: #d8b4fe;
+}
+
+.input-group-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-group-2 textarea {
+  resize: vertical;
+}
+
+.input-group-2 .btn {
+  align-self: center;
+  min-width: 150px;
+}
+
+.footer {
+  background: #0f172a;
+  border-top: 1px solid rgba(168, 85, 247, 0.1);
+  padding: 3rem 5%;
+  text-align: center;
+}
+
+.footer .social-icons {
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-list a {
+  color: #cbd5e1;
+  transition: color 0.3s;
+}
+
+.footer-list a:hover {
+  color: #a855f7;
+}
+
+.copyright {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.uiux-projects {
+  background: #1e293b;
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+  
+  .skills {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline-items::before {
+    left: 0;
+  }
+  
+  .timeline-item {
+    margin-left: 0 !important;
+    flex-direction: row !important;
+    padding-left: 50px;
+  }
+  
+  .timeline-dot {
+    margin-left: -35px;
+  }
+  
+  .input-group {
+    grid-template-columns: 1fr;
+  }
+  
+  .projects-box {
+    grid-template-columns: 1fr;
+  }
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">
+            Sandamini <span>Ranasignhe</span>
+        </a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <a href="#contact" class="gradient-btn">Contact Me</a>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h2>Hi, It's <span>Sandamini Ranasinghe</span></h2>
+            
+            <div class="titles-container">
+                <div class="titles animated-title">
+                    <h4>Software Engineering Undergraduate</h4>
+                </div>
+                <div class="titles animated-title">
+                    <h4>UI/UX Designer</h4>
+                </div>
+                <div class="titles animated-title">
+                    <h4>Full Stack Developer</h4>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://github.com/muijayaweera" target="_blank" class="icon-link">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/upeka-jayaweera/" target="_blank" class="icon-link">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+                <a href="https://www.behance.net/upekajayaweeraa" target="_blank" class="icon-link">
+                    <i class="bx bxl-behance"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="icon-link">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+            </div>
+
+            <div class="btn-group">
+                <a href="https://drive.google.com/file/d/1PFsl5fBHD8jP_3TlvZ7hu4eWNJhH-eRR/view?usp=sharing" class="btn" target="_blank">View Resume</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="me1.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+
+            <p>I am a final year undergraduate student at NSBM Green University, currently pursuing a BSc (Hons) Software Engineering, with hands-on experience in web and mobile development. Skilled in building responsive, user-friendly websites and applications using HTML, CSS, JavaScript, Flutter, and Firebase. I am deeply passionate about UI/UX designing and creating clean, accessible digital experiences. I possess proven ability to deliver real-world solutions through individual and team projects.</p>
+
+            <p>Alongside technical expertise, I possess strong communication, leadership, and teamwork skills gained from academic and extracurricular projects. Through project-based learning, I have enhanced my technical skills, creativity, and problem-solving abilities. I actively pursue continuous learning through online courses, aiming to grow as a versatile professional who adapts to evolving technologies and contributes effectively to any team.</p>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+        <div class="skills-group">
+            <h2>Technical Skills</h2>
+            <div class="skills-box">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Dart</li>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>Firebase</li>
+                    <li>Arduino Programming</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skills-group">
+            <h2>Soft Skills</h2>
+            <div class="skills-box">
+                <ul>
+                    <li>Communication</li>
+                    <li>Problem Solving</li>
+                    <li>Teamwork</li>
+                    <li>Creativity</li>
+                    <li>Leadership</li>
+                    <li>Adaptability</li>
+                    <li>Time Management</li>
+                    <li>Critical Thinking</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="education" id="education">
+        <h2 class="heading">Educa<span>tion</span></h2>
+
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                    <h3>Final Year Undergraduate</h3>
+                    <p>Pursuing a BSc (Hons) in Software Engineering at NSBM Green University (Affiliated with Plymouth University, UK)</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                    <h3>Advanced Certificate Course</h3>
+                    <p>Earned an Advanced Certificate in Software Engineering at NSBM Green University.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                    <h3>GCE Advanced Levels</h3>
+                    <p>Completed Advanced Level (A/L) Examinations in Physical Science Stream.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2019</div>
+                <div class="timeline-content">
+                    <h3>GCE Ordinary Levels</h3>
+                    <p>Successfully completed Ordinary Level (O/L) Examinations with A grades for English & Mathematics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEVELOPMENT PROJECTS SECTION -->
+    <section class="projects" id="projects">
+        <h2 class="heading section-title">Development <span>Projects</span></h2>
+
+        <div class="projects-box">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="images/port.png" alt="Portfolio Website">
+                <h3>Portfolio Website</h3>
+                <p>A personal online showcase highlighting my skills, projects, and design style with a clean, user-friendly interface.</p>
+                <div class="tech-stack">Tech Stack : HTML | CSS | JavaScript</div>
+                <div class="project-buttons">
+                    <a href="https://github.com/muijayaweera/Portfolio-Website" target="_blank" class="btn code-btn">
+                        <i class="bx bxl-github"></i> Code
+                    </a>
+                    <button class="btn readmore-btn" onclick="openModal('project1')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Modal for Project 1 -->
+            <div id="project1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('project1')">&times;</span>
+                    <h2>Portfolio Website</h2>
+                    <p>My portfolio website is a personal project created to showcase my skills, projects, and achievements in software engineering and UI/UX design. The site was designed with a strong focus on modern, minimal aesthetics and a smooth user experience, making it both professional and visually appealing.</p>
+                    <p>The website was built using HTML, CSS, and JavaScript, with attention given to responsive design. I also implemented interactive features and smooth animations to enhance usability and engagement.</p>
+                    <p>A special point about this website is that it wasn't just built for presentation—it was created as a learning experience, helping me refine my front-end development skills while experimenting with UI/UX techniques.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="images/ostocare.png" alt="OstoCare">
+                <h3>OstoCare</h3>
+                <p>A mobile solution designed to support ostomy patients by providing resources, tracking tools, and access to healthcare professionals.</p>
+                <div class="tech-stack">Tech Stack : Dart | Flutter | Firebase</div>
+                <div class="project-buttons">
+                    <a href="https://github.com/muijayaweera/Ostocare_Mobapp" target="_blank" class="btn code-btn">
+                        <i class="bx bxl-github"></i> Code
+                    </a>
+                    <button class="btn readmore-btn" onclick="openModal('project2')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Modal for Project 2 -->
+            <div id="project2" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('project2')">&times;</span>
+                    <h2>OstoCare</h2>
+                    <p>OstoCare is a mobile application designed to improve the lives of ostomy patients by providing them with ongoing care, emotional support, and easy access to vital information. It was developed as part of a university project, aiming to tackle a real-world healthcare challenge.</p>
+                    <p>The app is built using Flutter for cross-platform compatibility, with Firebase serving as the backend for real-time data storage and authentication. Its development followed the Agile methodology, ensuring iterative progress and adaptability throughout the project.</p>
+                    <p>What makes OstoCare special is its dual focus: while it empowers patients with tools for daily care, it also supports healthcare providers with access to patient data and teleconsultation features.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="images/iot.png" alt="IoT Smart Shelf">
+                <h3>IoT Based Smart Shelf</h3>
+                <p>A real-time inventory monitoring system that tracks stock levels, item movement, and low-stock alerts.</p>
+                <div class="tech-stack">Tech Stack : Arduino & ESP32 | HTML | Firebase</div>
+                <div class="project-buttons">
+                    <a href="https://github.com/muijayaweera/IoTwebdashboard" target="_blank" class="btn code-btn">
+                        <i class="bx bxl-github"></i> Code
+                    </a>
+                    <button class="btn readmore-btn" onclick="openModal('project3')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Modal for Project 3 -->
+            <div id="project3" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('project3')">&times;</span>
+                    <h2>IoT-Based Smart Shelf</h2>
+                    <p>The IoT-Based Smart Shelf is an innovative system developed to help businesses track stock levels and item movements in real-time. It combines hardware and software to monitor inventory automatically, reducing errors and improving efficiency.</p>
+                    <p>The system uses Arduino, ESP32, load cells, RFID tags, and LCD displays to detect product weight and identify items. I built a web dashboard using HTML, CSS, and JavaScript, connected to Firebase for real-time data visualization.</p>
+                    <p>A unique point about this project is how it integrates multiple devices into one ecosystem, not only displaying stock levels but also identifying fast-moving and slow-moving items.</p>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <img src="images/nsbmgo.png" alt="NSBM Go">
+                <h3>NSBM Go</h3>
+                <p>A university app that keeps students updated on events, clubs, and activities through an engaging interface.</p>
+                <div class="tech-stack">Tech Stack : Dart | Flutter | Firebase</div>
+                <div class="project-buttons">
+                    <a href="https://github.com/NsbmGO/NSBM-GO--MAD" target="_blank" class="btn code-btn">
+                        <i class="bx bxl-github"></i> Code
+                    </a>
+                    <button class="btn readmore-btn" onclick="openModal('project4')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Modal for Project 4 -->
+            <div id="project4" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('project4')">&times;</span>
+                    <h2>NSBM Go</h2>
+                    <p>NSBM Go is a university mobile app developed to enhance student life by providing real-time updates on campus events, clubs, and societies. The app features an Instagram-like "stories" section for event highlights.</p>
+                    <p>Built using Flutter and Dart in Android Studio, the app provides a clean and engaging interface designed with students in mind, focusing on convenience and accessibility.</p>
+                    <p>What makes NSBM Go stand out is its focus on community engagement and information centralization, strengthening student participation in both academic and extracurricular activities.</p>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+                <img src="images/hr.png" alt="HR Evaluation">
+                <h3>HR Evaluation App</h3>
+                <p>A web-based solution for efficiently managing employee performance reviews and evaluation processes.</p>
+                <div class="tech-stack">Tech Stack : HTML | CSS | JavaScript</div>
+                <div class="project-buttons">
+                    <a href="https://github.com/muijayaweera/hr-eval-app" target="_blank" class="btn code-btn">
+                        <i class="bx bxl-github"></i> Code
+                    </a>
+                    <button class="btn readmore-btn" onclick="openModal('project5')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Modal for Project 5 -->
+            <div id="project5" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('project5')">&times;</span>
+                    <h2>HR Evaluation App</h2>
+                    <p>The HR Evaluation App is a web-based solution developed to streamline employee performance evaluation within organizations. It allows HR managers to set criteria, track progress, and generate reports in a structured way.</p>
+                    <p>Built using HTML, CSS, JavaScript, and PHP, with MySQL as the database for secure storage. The system was designed with usability in mind for both HR staff and employees.</p>
+                    <p>By digitalizing the process, it eliminates paperwork, reduces bias, saves time, and makes HR management more effective and fair.</p>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card">
+                <img src="images/godrive.png" alt="GoDrive">
+                <h3>GoDrive</h3>
+                <p>An online platform streamlining vehicle rentals for tourists and service providers with intuitive booking.</p>
+                <div class="tech-stack">Tech Stack : C# | ASP.NET | MySQL</div>
+                <div class="project-buttons">
+                    <a href="https://github.com/muijayaweera/go-drive" target="_blank" class="btn code-btn">
+                        <i class="bx bxl-github"></i> Code
+                    </a>
+                    <button class="btn readmore-btn" onclick="openModal('project6')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Modal for Project 6 -->
+            <div id="project6" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('project6')">&times;</span>
+                    <h2>GoDrive</h2>
+                    <p>GoDrive is a C#-based web application designed as a comprehensive vehicle rental platform. It was developed as part of a university project with the goal of enhancing how tourists explore Sri Lanka.</p>
+                    <p>Built using C# and ASP.NET, with a MySQL database. Features include vehicle browsing, booking management, and an admin panel for rental providers with a user-friendly interface.</p>
+                    <p>GoDrive balances customer convenience with provider efficiency, providing a personalized rental experience while reducing manual workload for service providers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UI/UX PROJECTS SECTION -->
+    <section class="projects uiux-projects" id="uiux">
+        <h2 class="heading section-title">UI/UX <span>Projects</span></h2>
+
+        <div class="projects-box">
+            <!-- UI/UX Project 1 -->
+            <div class="project-card">
+                <img src="images/ostocare.png" alt="OstoCare UI/UX">
+                <h3>OstoCare</h3>
+                <p><span><b>Designed with accessibility in mind.</b></span></p>
+                <p>The OstoCare UI/UX design delivers a calm, supportive, and easy-to-use experience for ostomy patients. With soft colors, clear layouts, and intuitive navigation, it makes essential tasks simple and stress-free.</p>
+                <p><b>Designed Using: Figma</b></p>
+                <a href="https://www.behance.net/gallery/231158469/OstoCare-Healthcare-Mobile-App-UIUX" target="_blank" class="btn btn-behance">
+                    <i class="bx bxl-behance"></i> Behance
+                </a>
+            </div>
+
+            <!-- UI/UX Project 2 -->
+            <div class="project-card">
+                <img src="images/cine.png" alt="Cine Sapphire">
+                <h3>Cine Sapphire</h3>
+                <p><span><b>Built for a premium cinematic feel.</b></span></p>
+                <p>CineSapphire's UI/UX design redefines the cinema booking journey with a sleek, modern interface. From browsing movies to smooth seat selection, it combines vibrant visuals and seamless interactions.</p>
+                <p><b>Designed Using: Figma</b></p>
+                <a href="https://www.behance.net/gallery/228262829/Cine-Sapphire-Modern-Cinema-Website-UI" target="_blank" class="btn btn-behance">
+                    <i class="bx bxl-behance"></i> Behance
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea name="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://github.com/muijayaweera" target="_blank" class="icon-link">
+                <i class="bx bxl-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/upeka-jayaweera/" target="_blank" class="icon-link">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+            <a href="https://www.behance.net/upekajayaweeraa" target="_blank" class="icon-link">
+                <i class="bx bxl-behance"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="icon-link">
+                <i class="bx bxl-instagram-alt"></i>
+            </a>
+        </div>
+
+        <ul class="footer-list">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <p class="copyright">
+            &copy; 2024 Upeka Jayaweera | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
