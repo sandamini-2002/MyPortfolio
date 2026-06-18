@@ -86,7 +86,7 @@ span{
     text-wrap: nowrap;
 }
 .gradient-btn:hover{
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
 
 section {

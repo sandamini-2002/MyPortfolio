@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio of a Software Engineer and UI/UX Designer">
-    <meta property="og:title" content="Portfolio | Upeka Jayaweera">
+    <meta property="og:title" content="Portfolio | Sandamini Ranasinghe">
     <meta property="og:description" content="Showcase of projects, skills, and experience">
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Portfolio | Sandamini Ranasignhe</title>
+    <title>Portfolio | Sandamini Ranasinghe</title>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <style>
@@ -205,6 +205,15 @@ body {
   max-width: 400px;
   border-radius: 20px;
   border: 2px solid #a855f7;
+}
+
+.profile-img {
+  width: 300px !important;
+  height: 300px !important;
+  max-width: 300px !important;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  margin: 0 auto;
 }
 
 section {
@@ -618,7 +627,7 @@ section {
 <body>
     <header class="header">
         <a href="#home" class="logo">
-            Sandamini <span>Ranasignhe</span>
+            Sandamini <span>Ranasinghe</span>
         </a>
 
         <i class="bx bx-menu" id="menu-icon"></i>
@@ -656,24 +665,24 @@ section {
                 <a href="https://github.com/sandamini-2002" target="_blank" class="icon-link">
                     <i class="bx bxl-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/Sandamini Ranasinghe/" target="_blank" class="icon-link">
+                <a href="https://www.linkedin.com/in/sandamini-ranasinghe/" target="_blank" class="icon-link">
                     <i class="bx bxl-linkedin-square"></i>
                 </a>
-                <a href="https://www.behance.net/sadaminmadushi" target="_blank" class="icon-link">
+                <a href="https://www.behance.net/sandaminimadushi" target="_blank" class="icon-link">
                     <i class="bx bxl-behance"></i>
                 </a>
-                <a href="https://instagram.com/sandaminiranasinghe" target="_blank" class="icon-link">
+                <a href="https://instagram.com/sandamini_madhushika" target="_blank" class="icon-link">
                     <i class="bx bxl-instagram-alt"></i>
                 </a>
             </div>
 
             <div class="btn-group">
-                <a href="https://drive.google.com/file/d/1PFsl5fBHD8jP_3TlvZ7hu4eWNJhH-eRR/view?usp=sharing" class="btn" target="_blank">View Resume</a>
+                <a href="https://drive.google.com/file/d/1WAGCmrEXu9qm1ak9NufIn6ed45HH4Xfa/view?usp=sharing" class="btn" target="_blank">View Resume</a>
             </div>
         </div>
 
         <div class="home-img">
-            <img src="me1.jpg" alt="Profile Picture">
+            <img src="my1.jpg" alt="Profile Picture" class="profile-img">
         </div>
     </section>
 
@@ -760,7 +769,7 @@ section {
                 <div class="timeline-date">2019</div>
                 <div class="timeline-content">
                     <h3>GCE Ordinary Levels</h3>
-                    <p>Successfully completed Ordinary Level (O/L) Examinations with A grades for English & Mathematics.</p>
+                    <p>Successfully completed Ordinary Level (O/L) Examinations.</p>
                 </div>
             </div>
         </div>
@@ -773,12 +782,12 @@ section {
         <div class="projects-box">
             <!-- Project 1 -->
             <div class="project-card">
-                <img src="images/port.png" alt="Portfolio Website">
+                <img src="data/images/profile.png" alt="Portfolio Website">
                 <h3>Portfolio Website</h3>
                 <p>A personal online showcase highlighting my skills, projects, and design style with a clean, user-friendly interface.</p>
                 <div class="tech-stack">Tech Stack : HTML | CSS | JavaScript</div>
                 <div class="project-buttons">
-                    <a href="https://github.com/muijayaweera/Portfolio-Website" target="_blank" class="btn code-btn">
+                    <a href="https://github.com/sandamini-2002/MyPortfolio" target="_blank" class="btn code-btn">
                         <i class="bx bxl-github"></i> Code
                     </a>
                     <button class="btn readmore-btn" onclick="openModal('project1')">Read More</button>
@@ -795,15 +804,61 @@ section {
                     <p>A special point about this website is that it wasn't just built for presentation—it was created as a learning experience, helping me refine my front-end development skills while experimenting with UI/UX techniques.</p>
                 </div>
             </div>
+            
+            <div class="project-card">
+    <img src="data/images/healmate.png" alt="HealMate Mobile App">
+    <h3>HealMate Mobile Health Assistant</h3>
+    <p>A mobile healthcare application that provides symptom-based health recommendations, personalized guidance, and healthcare product suggestions.</p>
+
+    <div class="tech-stack">
+        Tech Stack : Flutter | Firebase | Firestore | Firebase Auth
+    </div>
+
+    <div class="project-buttons">
+
+        <a href="https://github.com/sandamini-2002/MyPortfolio" target="_blank" class="btn code-btn">
+                        <i class="bx bxl-github"></i> Code
+        </a>
+
+        <button class="btn readmore-btn" onclick="openModal('project2')">
+            Read More
+        </button>
+    </div>
+</div>
+
+<!-- Modal for HealMate -->
+<div id="project2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('project2')">&times;</span>
+
+        <h2>HealMate Mobile Health Assistant</h2>
+
+        <p>
+            HealMate is a mobile healthcare assistant application developed as my Final Year Research Project. The application helps users identify possible health conditions based on symptoms and provides personalized healthcare recommendations.
+        </p>
+
+        <p>
+            One of the main features of the system is the Interactive Body Map, which allows users to select the affected body area and identify symptoms easily. The application then analyzes the selected symptom together with age and gender information to provide more personalized health guidance.
+        </p>
+
+        <p>
+            The system includes symptom severity assessment, confidence-based analysis, healthcare recommendations, product suggestions, health news updates, and saved result management. An admin dashboard was also developed to manage symptoms, severity questions, products, and healthcare content through Firebase.
+        </p>
+
+        <p>
+            This project was developed using Flutter and Firebase, focusing on improving healthcare accessibility through an easy-to-use mobile platform while strengthening my mobile application development, Firebase integration, and UI/UX design skills.
+        </p>
+    </div>
+</div>
 
             <!-- Project 2 -->
             <div class="project-card">
-                <img src="images/ostocare.png" alt="OstoCare">
+                <img src="data/images/ostocare.png" alt="OstoCare">
                 <h3>OstoCare</h3>
                 <p>A mobile solution designed to support ostomy patients by providing resources, tracking tools, and access to healthcare professionals.</p>
                 <div class="tech-stack">Tech Stack : Dart | Flutter | Firebase</div>
                 <div class="project-buttons">
-                    <a href="https://github.com/Ostocare_Mobapp" target="_blank" class="btn code-btn">
+                    <a href="https://github.com/muijayaweera/Ostocare_Mobapp" target="_blank" class="btn code-btn">
                         <i class="bx bxl-github"></i> Code
                     </a>
                     <button class="btn readmore-btn" onclick="openModal('project2')">Read More</button>
@@ -823,12 +878,12 @@ section {
 
             <!-- Project 3 -->
             <div class="project-card">
-                <img src="images/iot.png" alt="IoT Smart Shelf">
+                <img src="data/images/iot.png" alt="IoT Smart Shelf">
                 <h3>IoT Based Smart Shelf</h3>
                 <p>A real-time inventory monitoring system that tracks stock levels, item movement, and low-stock alerts.</p>
                 <div class="tech-stack">Tech Stack : Arduino & ESP32 | HTML | Firebase</div>
                 <div class="project-buttons">
-                    <a href="https://github.com/muijayaweera/IoTwebdashboard" target="_blank" class="btn code-btn">
+                    <a href="https://github.com/sandamini-2002/IoTwebdashboard" target="_blank" class="btn code-btn">
                         <i class="bx bxl-github"></i> Code
                     </a>
                     <button class="btn readmore-btn" onclick="openModal('project3')">Read More</button>
@@ -848,7 +903,7 @@ section {
 
             <!-- Project 4 -->
             <div class="project-card">
-                <img src="images/nsbmgo.png" alt="NSBM Go">
+                <img src="data/images/nsbmgo.png" alt="NSBM Go">
                 <h3>NSBM Go</h3>
                 <p>A university app that keeps students updated on events, clubs, and activities through an engaging interface.</p>
                 <div class="tech-stack">Tech Stack : Dart | Flutter | Firebase</div>
@@ -873,53 +928,158 @@ section {
 
             <!-- Project 5 -->
             <div class="project-card">
-                <img src="images/hr.png" alt="HR Evaluation">
-                <h3>HR Evaluation App</h3>
-                <p>A web-based solution for efficiently managing employee performance reviews and evaluation processes.</p>
-                <div class="tech-stack">Tech Stack : HTML | CSS | JavaScript</div>
-                <div class="project-buttons">
-                    <a href="https://github.com/muijayaweera/hr-eval-app" target="_blank" class="btn code-btn">
-                        <i class="bx bxl-github"></i> Code
-                    </a>
-                    <button class="btn readmore-btn" onclick="openModal('project5')">Read More</button>
-                </div>
-            </div>
 
-            <!-- Modal for Project 5 -->
-            <div id="project5" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('project5')">&times;</span>
-                    <h2>HR Evaluation App</h2>
-                    <p>The HR Evaluation App is a web-based solution developed to streamline employee performance evaluation within organizations. It allows HR managers to set criteria, track progress, and generate reports in a structured way.</p>
-                    <p>Built using HTML, CSS, JavaScript, and PHP, with MySQL as the database for secure storage. The system was designed with usability in mind for both HR staff and employees.</p>
-                    <p>By digitalizing the process, it eliminates paperwork, reduces bias, saves time, and makes HR management more effective and fair.</p>
-                </div>
-            </div>
+    <img src="data/images/lamp.png" alt="LAMP Studio Furniture Visualization System">
+
+
+    <h3>LAMP Studio - Furniture Visualization Application</h3>
+
+
+    <p>
+        A web-based interior design application developed to help designers and customers 
+        visualize furniture arrangements using 2D layouts and interactive 3D environments.
+    </p>
+
+
+    <div class="tech-stack">
+        Tech Stack : Next.js | React.js | Three.js | Tailwind CSS | Express.js | MongoDB | JWT
+    </div>
+
+
+    <div class="project-buttons">
+
+        <a href="https://www.figma.com/proto/WRAOhm7o8I1EpxeUoiNZgF/Untitled?node-id=1-537&p=f&t=2YIrdry8LOED4Dl8-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" 
+   target="_blank" 
+   class="btn code-btn">
+
+    <i class="bx bxl-figma"></i> Prototype
+
+</a>
+
+        <button class="btn readmore-btn" onclick="openModal('project5')">
+            Read More
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- Modal for LAMP Studio -->
+
+<div id="project5" class="modal">
+
+
+    <div class="modal-content">
+
+
+        <span class="close" onclick="closeModal('project5')">&times;</span>
+
+
+        <h2>LAMP Studio - Furniture Visualization Application</h2>
+
+
+        <p>
+            LAMP Studio is a web-based furniture visualization application developed 
+            to improve the interior design experience by allowing designers and customers 
+            to create, customize, and visualize virtual room environments.
+        </p>
+
+
+        <p>
+            The system enables designers to create room layouts by entering room dimensions, 
+            selecting room shapes, applying colour schemes, and arranging furniture items 
+            using an interactive 2D drag-and-drop editor. Users can resize, customize colours, 
+            adjust opacity, and manage furniture placement according to their design requirements.
+        </p>
+
+
+        <p>
+            The application provides an advanced 3D visualization feature using Three.js, 
+            allowing users to convert 2D layouts into realistic interactive 3D scenes. 
+            Users can explore room designs, switch views, modify furniture colours, and 
+            preview how furniture will appear in real-world environments.
+        </p>
+
+
+        <p>
+            A secure authentication system with role-based access control was implemented 
+            for Designers and Admins. Designers can create, save, edit, and manage their 
+            designs, while administrators can monitor users and manage system data through 
+            the admin dashboard.
+        </p>
+
+
+        <p>
+            This project was developed using Next.js, React.js, Three.js, Tailwind CSS, 
+            Express.js, and MongoDB. The project enhanced my knowledge of full-stack 
+            development, 3D web technologies, UI/UX principles, database management, 
+            authentication, and interactive application development.
+        </p>
+
+
+    </div>
+
+
+</div>
 
             <!-- Project 6 -->
             <div class="project-card">
-                <img src="images/godrive.png" alt="GoDrive">
-                <h3>GoDrive</h3>
-                <p>An online platform streamlining vehicle rentals for tourists and service providers with intuitive booking.</p>
-                <div class="tech-stack">Tech Stack : C# | ASP.NET | MySQL</div>
-                <div class="project-buttons">
-                    <a href="https://github.com/muijayaweera/go-drive" target="_blank" class="btn code-btn">
-                        <i class="bx bxl-github"></i> Code
-                    </a>
-                    <button class="btn readmore-btn" onclick="openModal('project6')">Read More</button>
-                </div>
-            </div>
+    <img src="data/images/autopit.png" alt="Vehicle Service & Repair Management System">
 
-            <!-- Modal for Project 6 -->
-            <div id="project6" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('project6')">&times;</span>
-                    <h2>GoDrive</h2>
-                    <p>GoDrive is a C#-based web application designed as a comprehensive vehicle rental platform. It was developed as part of a university project with the goal of enhancing how tourists explore Sri Lanka.</p>
-                    <p>Built using C# and ASP.NET, with a MySQL database. Features include vehicle browsing, booking management, and an admin panel for rental providers with a user-friendly interface.</p>
-                    <p>GoDrive balances customer convenience with provider efficiency, providing a personalized rental experience while reducing manual workload for service providers.</p>
-                </div>
-            </div>
+```
+<h3>Vehicle Service & Repair Management System</h3>
+
+<p>
+    A desktop-based management system developed to streamline vehicle service records, repair information, and administrative data management.
+</p>
+
+<div class="tech-stack">
+    Tech Stack : C# | Windows Forms | SQL Server | Visual Studio 2022
+</div>
+
+<div class="project-buttons">
+
+    <button class="btn readmore-btn" onclick="openModal('project6')">
+        Read More
+    </button>
+</div>
+```
+
+</div>
+
+<!-- Modal for Vehicle Service System -->
+
+<div id="project6" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('project6')">&times;</span>
+
+```
+    <h2>Vehicle Service & Repair Management System</h2>
+
+    <p>
+        The Vehicle Service & Repair Management System is a desktop application developed to improve the efficiency of managing vehicle service, repair, and maintenance records. The system replaces traditional manual record-keeping methods with a centralized digital solution.
+    </p>
+
+    <p>
+        The application allows employees to enter and manage vehicle servicing details, repair records, accident information, and customer-related data through an easy-to-use interface. This helps reduce paperwork, improve data accuracy, and speed up information retrieval.
+    </p>
+
+    <p>
+        An administrator module was developed to provide complete control over the system, including viewing, updating, and deleting records. Secure user authentication and database integration were implemented to ensure reliable and secure data management.
+    </p>
+
+    <p>
+        This project was developed using C#, Windows Forms, and SQL Server. It strengthened my knowledge of desktop application development, database management, CRUD operations, user authentication, and software design principles.
+    </p>
+</div>
+```
+
+</div>
+
         </div>
     </section>
 
@@ -930,24 +1090,24 @@ section {
         <div class="projects-box">
             <!-- UI/UX Project 1 -->
             <div class="project-card">
-                <img src="images/ostocare.png" alt="OstoCare UI/UX">
-                <h3>OstoCare</h3>
+                <img src="data/images/healmate.png" alt="Healmate UI/UX">
+                <h3>Healmate</h3>
                 <p><span><b>Designed with accessibility in mind.</b></span></p>
-                <p>The OstoCare UI/UX design delivers a calm, supportive, and easy-to-use experience for ostomy patients. With soft colors, clear layouts, and intuitive navigation, it makes essential tasks simple and stress-free.</p>
+                <p>The Healmate UI/UX design delivers a calm, supportive, and easy-to-use experience for patients. With soft colors, clear layouts, and intuitive navigation, it makes essential tasks simple and stress-free.</p>
                 <p><b>Designed Using: Figma</b></p>
-                <a href="https://www.behance.net/gallery/250819569/Cinema-Website-UI" target="_blank" class="btn btn-behance">
+                <a href="https://www.behance.net/gallery/251182371/Symptom-Based-Healthcare-Recommendation-System" target="_blank" class="btn btn-behance">
                     <i class="bx bxl-behance"></i> Behance
                 </a>
             </div>
 
             <!-- UI/UX Project 2 -->
             <div class="project-card">
-                <img src="images/cine.png" alt="Cine Sapphire">
+                <img src="data/images/cine.png" alt="Cine Sapphire">
                 <h3>Cine Sapphire</h3>
                 <p><span><b>Built for a premium cinematic feel.</b></span></p>
                 <p>CineSapphire's UI/UX design redefines the cinema booking journey with a sleek, modern interface. From browsing movies to smooth seat selection, it combines vibrant visuals and seamless interactions.</p>
                 <p><b>Designed Using: Figma</b></p>
-                <a href="https://www.behance.net/gallery/228262829/Cine-Sapphire-Modern-Cinema-Website-UI" target="_blank" class="btn btn-behance">
+                <a href="https://www.behance.net/gallery/250819569/Cinema-Website-UI" target="_blank" class="btn btn-behance">
                     <i class="bx bxl-behance"></i> Behance
                 </a>
             </div>
@@ -958,7 +1118,7 @@ section {
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+        <form action="https://formspree.io/f/mnjyyjdd" method="POST" class="contact-form">
             <div class="input-group">
                 <div class="input-box">
                     <input type="text" name="name" placeholder="Full Name" required>
@@ -981,16 +1141,16 @@ section {
     <!-- FOOTER -->
     <footer class="footer">
         <div class="social-icons">
-            <a href="https://github.com/muijayaweera" target="_blank" class="icon-link">
+            <a href="https://github.com/sandamini-2002" target="_blank" class="icon-link">
                 <i class="bx bxl-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/upeka-jayaweera/" target="_blank" class="icon-link">
+            <a href="https://www.linkedin.com/in/sandamini-ranasinghe/" target="_blank" class="icon-link">
                 <i class="bx bxl-linkedin-square"></i>
             </a>
-            <a href="https://www.behance.net/upekajayaweeraa" target="_blank" class="icon-link">
+            <a href="https://www.behance.net/sandaminimadushi" target="_blank" class="icon-link">
                 <i class="bx bxl-behance"></i>
             </a>
-            <a href="https://instagram.com" target="_blank" class="icon-link">
+            <a href="https://instagram.com/sandamini_madhushika" target="_blank" class="icon-link">
                 <i class="bx bxl-instagram-alt"></i>
             </a>
         </div>
@@ -1003,7 +1163,7 @@ section {
         </ul>
 
         <p class="copyright">
-            &copy; 2024 Upeka Jayaweera | All Rights Reserved
+            &copy; 2024 Sandamini Ranasinghe | All Rights Reserved
         </p>
     </footer>
 
